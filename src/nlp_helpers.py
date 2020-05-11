@@ -55,9 +55,9 @@ def scree_plot(ax, pca, n_components_to_plot=8, title=None):
                    va="bottom", 
                    ha="center", 
                    fontsize=12)
-    ax.set_xticklabels(ind, fontsize=12)
-    ax.set_ylim(0, max(vals) + 0.05)
-    ax.set_xlim(0 - 0.45, n_components_to_plot + 0.45)
+    #ax.set_xticklabels(ind, fontsize=12)
+    #ax.set_ylim(0, max(vals) + 0.05)
+    #ax.set_xlim(0 - 0.45, n_components_to_plot + 0.45)
     ax.set_xlabel("Principal Component", fontsize=12)
     ax.set_ylabel("Variance Explained (%)", fontsize=12)
     if title is not None:
