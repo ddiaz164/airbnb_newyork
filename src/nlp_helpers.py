@@ -29,11 +29,11 @@ def hand_label_topics(H, vocabulary):
     hand_labels = []
     for i, row in enumerate(H, start=1):
         top_five = np.argsort(row)[::-1][:5]
-        print('topic', i)
-        print('-->', ' '.join(vocabulary[top_five]))
+        #print('topic', i)
+        #print('-->', ' '.join(vocabulary[top_five]))
         label = i
         hand_labels.append(label)
-        print()
+        #print()
     return hand_labels
 def analyze(index, contents, W, hand_labels):
     probs = softmax(W[index], temperature=0.01)
@@ -45,7 +45,7 @@ def analyze_probs(df, W, hand_labels):
     for i in df.index:
         prob = softmax(W[i], temperature=0.01)
         probs.append(prob)
-    return probs, hand_labels
+    return probs
 def analyze_all(df, W, hand_labels):
     labels = []
     for i in df.index:
