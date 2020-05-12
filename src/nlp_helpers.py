@@ -40,6 +40,12 @@ def analyze(index, contents, W, hand_labels):
     for prob, label in zip(probs, hand_labels):
         print('--> {:.2f}% {}'.format(prob * 100, label))
     print()
+def analyze_probs(df, W, hand_labels):
+    probs = []
+    for i in df.index:
+        prob = softmax(W[i], temperature=0.01)
+        probs.append(prob)
+    return probs, hand_labels
 def analyze_all(df, W, hand_labels):
     labels = []
     for i in df.index:
