@@ -27,21 +27,25 @@ def softmax(v, temperature=1.0):
     return expv / s
 def hand_label_topics(H, vocabulary):
     hand_labels = []
-    for i, row in enumerate(H):
-        top_five = np.argsort(row)[::-1][:20]
+    for i, row in enumerate(H, start=1):
+        top_five = np.argsort(row)[::-1][:5]
         print('topic', i)
         print('-->', ' '.join(vocabulary[top_five]))
-        label = input('topic: ')
+        label = i
         hand_labels.append(label)
         print()
     return hand_labels
-def analyze(article_index, contents, web_urls, W, hand_labels):
-    print(web_urls[article_index])
-    print(contents[article_index])
-    probs = softmax(W[article_index], temperature=0.01)
+def analyze(index, contents, W, hand_labels):
+    probs = softmax(W[index], temperature=0.01)
     for prob, label in zip(probs, hand_labels):
         print('--> {:.2f}% {}'.format(prob * 100, label))
     print()
+def analyze_all(df, W, hand_labels):
+    labels = []
+    for i in df.index:
+        probs = softmax(W[i], temperature=0.01)
+        labels.append(hand_labels[probs.argmax()])
+    return labels
 def scree_plot(ax, pca, n_components_to_plot=8, title=None):
 
     num_components = pca.n_components_
