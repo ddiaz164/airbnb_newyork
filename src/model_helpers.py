@@ -89,3 +89,29 @@ def display_default_and_gsearch_model_results(model_default, model_gridsearch,
     r2 = r2_score(y_test, y_test_pred)
     print("     Default model mse: {0:0.3f} | r2: {1:0.3f}".format(mse, r2))
 
+def compare_model_results(model1, X_test, y_test, model2=None, model3=None, model4=None):
+
+    name1 = model1.__class__.__name__.replace('Regressor', '')
+    y_test_pred = model1.predict(X_test)
+    mse = mean_squared_error(y_test, y_test_pred)
+    r2 = r2_score(y_test, y_test_pred)
+    print(f"{name1:<25s} mse: {mse:0.3f} | r2: {r2:0.3f}")
+    if model2:
+        name2 = model2.__class__.__name__.replace('Regressor', '')
+        y_test_pred = model2.predict(X_test)
+        mse = mean_squared_error(y_test, y_test_pred)
+        r2 = r2_score(y_test, y_test_pred)
+        print(f"{name2:<25s} mse: {mse:0.3f} | r2: {r2:0.3f}")
+    if model3:
+        name3 = model3.__class__.__name__.replace('Regressor', '')
+        y_test_pred = model3.predict(X_test)
+        mse = mean_squared_error(y_test, y_test_pred)
+        r2 = r2_score(y_test, y_test_pred)
+        print(f"{name3:<25s} mse: {mse:0.3f} | r2: {r2:0.3f}")
+    if model4:
+        name4 = model4.__class__.__name__.replace('Regressor', '')
+        y_test_pred = model4.predict(X_test)
+        mse = mean_squared_error(y_test, y_test_pred)
+        r2 = r2_score(y_test, y_test_pred)
+        print(f"{name4:<25s} mse: {mse:0.3f} | r2: {r2:0.3f}")
+
