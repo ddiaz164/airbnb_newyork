@@ -54,6 +54,20 @@ def rf_score_plot(randforest, X_train, y_train, X_test, y_test):
     plt.axhline(test_score, alpha = 0.7, c = 'y', lw=3, ls='-.', label = 
                                                         'Random Forest Test')
 
+def stage_model_plot(estimator, X_test, y_test):
+    name = estimator.__class__.__name__.replace('Regressor', '')
+    test_scores = np.zeros((estimator.n_estimators,), dtype=np.float64)
+    for i, y_test_pred in enumerate(estimator.staged_predict(X_test)):
+        test_scores[i] = mean_absolute_error(y_test, y_test_pred)
+    plt.plot(test_scores, alpha=.5, label=f"{name} Test")
+    plt.ylabel('MAE', fontsize=14)
+    plt.xlabel('Iterations', fontsize=14)
+
+def rf_plot(randforest, X_test, y_test):
+    y_test_pred = randforest.predict(X_test)
+    test_score = mean_absolute_error(y_test, y_test_pred)
+    plt.axhline(test_score, alpha = 0.7, c = 'y', lw=3, ls='-.', label ='Random Forest Test')
+
 def gridsearch_with_output(estimator, parameter_grid, X_train, y_train):
 
     model_gridsearch = GridSearchCV(estimator,
