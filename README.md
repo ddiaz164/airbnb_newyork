@@ -34,13 +34,18 @@ Looking in on the zoom I thought there were just a few above $500 but nothing th
 ### Poor Models
 I trained my first couple of models and my R squared scores were horrible. 
 
-<code>Binary </code>  
+<code>Binary: </code>  
 <code>GradientBoosting   MAE: 65.082 | R<sup>2</sup>: 0.134 </code><br>
 <code>RandomForest       MAE: 74.833 | R<sup>2</sup>: 0.092 </code><br>
-<code>Probabilities </code><br>
+<code>Probabilities: </code><br>
 <code>GradientBoosting   MAE: 58.489 | R<sup>2</sup>: 0.171 </code><br>
 <code>RandomForest       MAE: 59.852 | R<sup>2</sup>: 0.153 </code>
 
 I saw some improvement with the probability columns rather than just binary columns but it was still nothing to reliably predict on. This is where I started to panic a little bit thinking I wouldn’t be able to predict price from the information I had alone.
 ## Target Adjustment
+I went back, zoomed in on the y-axis, and saw there was actually a lot more higher priced listings than what I originally saw. Some even as high as $10,000. 
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/price_zoom.PNG)
+
+I looked at these listings with crazy high prices and saw that the names were not very descriptive. Something like 1 bedroom Lincoln Center costing $10,000 was a hard correlation to make. I did a little digging and found that in some cases, hosts will set a very high price on the listing just to stand out, but will then negotiate that price down once contacted. These listings would be very hard to predict and would damage my model’s ability to predict, so I decided to only look at the data that had prices lower than $500. I would get rid of any anomalies and still retain 94% of my data.
+
 
