@@ -35,11 +35,11 @@ Looking in on the zoom I thought there were just a few above $500 but nothing th
 I trained my first couple of models and my R squared scores were horrible. 
 ```
 Binary
-GradientBoosting MAE: 65.082 | R\u00b2: 0.134
-RandomForest     MAE: 74.833 | R\u00b2: 0.092
+GradientBoosting   MAE: 65.082 | R^2: 0.134
+RandomForest       MAE: 74.833 | R^2: 0.092
 Probabilities
-GradientBoosting MAE: 58.489 | R\u00b2: 0.171
-RandomForest     MAE: 59.852 | R\u00b2: 0.153
+GradientBoosting   MAE: 58.489 | R^2: 0.171
+RandomForest       MAE: 59.852 | R^2: 0.153
 ```
 I saw some improvement with the probability columns rather than just binary columns but it was still nothing to reliably predict on. This is where I started to panic a little bit thinking I wouldn’t be able to predict price from the information I had alone.
 ## Target Adjustment
