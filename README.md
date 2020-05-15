@@ -46,7 +46,7 @@ I saw some improvement with the probability columns rather than just binary colu
 I went back, zoomed in on the y-axis, and saw there was actually a lot more higher priced listings than what I originally saw. Some even as high as $10,000. 
 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/price_zoom.PNG)
-![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/listing_name.PNG)
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/dummies.PNG)
 
 I looked at these listings with crazy high prices and saw that the names were not very descriptive. Something like 1 bedroom Lincoln Center costing $10,000 was a hard correlation to make. I did a little digging and found that in some cases, hosts will set a very high price on the listing just to stand out, but will then negotiate that price down once contacted. 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/cutoff.png)
