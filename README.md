@@ -37,10 +37,9 @@ I trained my first couple of models and my R squared scores were horrible.
 <code>Binary </code>  
 <code>GradientBoosting   MAE: 65.082 | R<sup>2</sup>: 0.134 </code><br>
 <code>RandomForest       MAE: 74.833 | R<sup>2</sup>: 0.092 </code>
-Probabilities <br>
-GradientBoosting   MAE: 58.489 | R<sup>2</sup>: 0.171 <br>
-RandomForest       MAE: 59.852 | R<sup>2</sup>: 0.153 <br>
-</code>
+<code>Probabilities </code>
+<code>GradientBoosting   MAE: 58.489 | R<sup>2</sup>: 0.171 </code><br>
+<code>RandomForest       MAE: 59.852 | R<sup>2</sup>: 0.153 </code>
 
 I saw some improvement with the probability columns rather than just binary columns but it was still nothing to reliably predict on. This is where I started to panic a little bit thinking I wouldn’t be able to predict price from the information I had alone.
 ## Target Adjustment
