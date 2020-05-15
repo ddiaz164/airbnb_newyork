@@ -6,6 +6,10 @@ I found the data I used on Kaggle, it describes about ten different listing acti
 ## Data Preparation
 As a pleasant surprise, the dataset came mostly clean with only a few columns having NaNs and they were very easy to fill according to their values. The reviews and reviews per month seemed to have NaNs when the listing had not been reviewed yet so those I filled with 0, and the name/host name columns have some NaNs so those I filled with 'Unknown'.
 ## Initial Lookthrough
-The first thing I wanted to do was to take a look at how these listings were distributed across the city. 
+The first thing I wanted to do was to take a look at how these listings were distributed across the city so I decided to make a heat map of airbnb counts throughout the city. 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/heat_map.png)
-I found that most of these were in the Manhattan and Brooklyn area and a small number of them in Bronx and Staten Island.
+
+I found that most of these listings were in the Manhattan and Brooklyn area with a small number of them being in Bronx and Staten Island, and a moderate amount in Queens.
+## Price Distribution
+To get a better visual of the price ranges in the city, I grouped each borough on average price and was not surprised to find that the more dense boroughs had a higher average price per listing. 
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_boroughs.png)
