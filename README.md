@@ -52,5 +52,6 @@ I looked at these listings with crazy high prices and saw that the names were no
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/cutoff.png)
 
 These listings would be very hard to predict on and would damage my model’s overall ability to predict prices, so I decided to only look at the data that had prices lower than $500. I would get rid of any anomalies and still retain 94% of my data.
-
+### Adjusted Models
+<img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/gradboost.png" width="300" height="200"><img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/learning_rate.png" width="300" height="200"><img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/adaboost.png" width="300" height="200">
 
