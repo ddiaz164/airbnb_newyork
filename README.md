@@ -47,6 +47,9 @@ I went back, zoomed in on the y-axis, and saw there was actually a lot more high
 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/price_zoom.PNG)
 
-I looked at these listings with crazy high prices and saw that the names were not very descriptive. Something like 1 bedroom Lincoln Center costing $10,000 was a hard correlation to make. I did a little digging and found that in some cases, hosts will set a very high price on the listing just to stand out, but will then negotiate that price down once contacted. These listings would be very hard to predict and would damage my model’s ability to predict, so I decided to only look at the data that had prices lower than $500. I would get rid of any anomalies and still retain 94% of my data.
+I looked at these listings with crazy high prices and saw that the names were not very descriptive. 
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/listing_name.PNG)
+
+Something like 1 bedroom Lincoln Center costing $10,000 was a hard correlation to make. I did a little digging and found that in some cases, hosts will set a very high price on the listing just to stand out, but will then negotiate that price down once contacted. These listings would be very hard to predict and would damage my model’s ability to predict, so I decided to only look at the data that had prices lower than $500. I would get rid of any anomalies and still retain 94% of my data.
 
 
