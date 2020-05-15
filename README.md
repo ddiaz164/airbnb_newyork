@@ -33,14 +33,12 @@ I saw all my prices clustered around 0-1000 so I zoomed my x-axis to get a bette
 Looking in on the zoom I thought there were just a few above $500 but nothing that would throw me off (wrong).
 ### Poor Models
 I trained my first couple of models and my R squared scores were horrible. 
-```
-Binary
-GradientBoosting   MAE: 65.082 | R</code><sup>2</sup><code>: 0.134
+<code>Binary
+GradientBoosting   MAE: 65.082 | R<sup>2</sup>: 0.134
 RandomForest       MAE: 74.833 | R^2: 0.092
 Probabilities
 GradientBoosting   MAE: 58.489 | R^2: 0.171
-RandomForest       MAE: 59.852 | R^2: 0.153
-```
+RandomForest       MAE: 59.852 | R^2: 0.153</code>
 I saw some improvement with the probability columns rather than just binary columns but it was still nothing to reliably predict on. This is where I started to panic a little bit thinking I wouldn’t be able to predict price from the information I had alone.
 ## Target Adjustment
 
