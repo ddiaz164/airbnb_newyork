@@ -50,7 +50,8 @@ I went back, zoomed in on the y-axis, and saw there was actually a lot more high
 I looked at these listings with crazy high prices and saw that the names were not very descriptive. 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/dummies.PNG)
 
-Something like 1 bedroom Lincoln Center costing $10,000 was a hard correlation to make. I did a little digging and found that in some cases, hosts will set a very high price on the listing just to stand out, but will then negotiate that price down once contacted. 
+Something like 1 bedroom Lincoln Center costing $10,000 was a hard correlation to make. I did a little digging and found that in some cases, hosts will set a very high price on the listing just to stand out, but will then negotiate that price down once contacted.
+
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/cutoff.png)
 
 These listings would be very hard to predict on and would damage my model’s overall ability to predict prices, so I decided to only look at the data that had prices lower than $500. I would get rid of any anomalies and still retain 94% of my data.
@@ -61,7 +62,7 @@ With the adjusted price, the new models were looking much better. I looked at so
 
 ## Grid Searching
 To fully optimize my models, I wanted to use grid search and find the hyperparameter combination that would give me the lowest error and highest R<sup>2</sup> value. To do this, an enormous amount of time would be required, so I left my machine running all night for a few days in order to go through all these different potential models and find the best one.
-![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/gradboost_gridsearch.png)
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/model_errors.png)
 
 After numerous hours of watching models train, I got my best scores with the XGBoost Regressor. It needed more hyperparameter tuning than the other models but it seemed to be worth it.
 ### Progress
