@@ -53,5 +53,8 @@ I looked at these listings with crazy high prices and saw that the names were no
 
 These listings would be very hard to predict on and would damage my model’s overall ability to predict prices, so I decided to only look at the data that had prices lower than $500. I would get rid of any anomalies and still retain 94% of my data.
 ### Adjusted Models
+With the adjusted price, the new models were looking much better. I looked at some simple things at first like learning rate, and tried out different regressors to see how they performed on the train and test sets.
+
 <img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/gradboost.png" width="300" height="200"><img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/learning_rate.png" width="300" height="200"><img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/adaboost.png" width="300" height="200">
 
+## Grid Searching
