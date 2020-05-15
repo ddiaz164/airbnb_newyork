@@ -71,3 +71,11 @@ Looking back at my progress as everything developed, all in all my R<sup>2</sup>
 
 However, after adjusting, I did then get a gradual increase as I tuned around for the best hyperparameter combinations.
 ## Results
+### Actual
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_true.png)
+### Predicted
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_preds.png)
+
+Looking at the results from the best model, you can see that the scale remained basically the same and most of the boroughs stayed in the same average price range, but the model does predict the average price in Queens to be lower than the actual average price there so it’s not a perfect model.
+## Future Steps
+Some future steps to take would be to develop a way of determining if the price listed is a dummy price, and then removing it from the data in order to avoid removing any really high prices that were legitimate. Another potential improvement would be training on a larger scale since this data set only included listings in New York City, so perhaps looking at something like countrywide data.
