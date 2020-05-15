@@ -58,3 +58,13 @@ With the adjusted price, the new models were looking much better. I looked at so
 <img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/gradboost.png" width="300" height="200"><img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/learning_rate.png" width="300" height="200"><img src="https://github.com/ddiaz164/airbnb_newyork/blob/master/images/adaboost.png" width="300" height="200">
 
 ## Grid Searching
+To fully optimize my models, I wanted to use grid search and find the hyperparameter combination that would give me the lowest error and highest R<sup>2</sup> value. To do this, an enormous amount of time would be required, so I left my machine running all night for a few days in order to go through all these different potential models and find the best one.
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/gradboost_gridsearch.png)
+
+After numerous hours of watching models train, I got my best scores with the XGBoost Regressor. It needed more hyperparameter tuning than the other models but it seemed to be worth it.
+### Progress
+Looking back at my progress as everything developed, all in all my R<sup>2</sup> made the biggest jump once I took the outlying prices into account and adjusted accordingly. 
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/r2_week.png)
+
+However, after adjusting, I did then get a gradual increase as I tuned around for the best hyperparameter combinations.
+## Results
