@@ -35,7 +35,7 @@ Looking in on the zoom I thought there were just a few above $500 but nothing th
 I trained my first couple of models and my R squared scores were horrible. 
 
 <code>Binary </code>  
-<code>GradientBoosting   MAE: 65.082 | R<sup>2</sup>: 0.134 </code>
+<code>GradientBoosting   MAE: 65.082 | R<sup>2</sup>: 0.134 </code><br>
 <code>RandomForest       MAE: 74.833 | R<sup>2</sup>: 0.092 </code>
 Probabilities <br>
 GradientBoosting   MAE: 58.489 | R<sup>2</sup>: 0.171 <br>
