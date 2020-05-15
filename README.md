@@ -36,8 +36,8 @@ I trained my first couple of models and my R squared scores were horrible.
 
 <code>Binary </code>  
 <code>GradientBoosting   MAE: 65.082 | R<sup>2</sup>: 0.134 </code><br>
-<code>RandomForest       MAE: 74.833 | R<sup>2</sup>: 0.092 </code>
-<code>Probabilities </code>
+<code>RandomForest       MAE: 74.833 | R<sup>2</sup>: 0.092 </code><br>
+<code>Probabilities </code><br>
 <code>GradientBoosting   MAE: 58.489 | R<sup>2</sup>: 0.171 </code><br>
 <code>RandomForest       MAE: 59.852 | R<sup>2</sup>: 0.153 </code>
 
