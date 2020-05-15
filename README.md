@@ -24,3 +24,14 @@ When looking at the data, I found there was a lot of information contained in th
 ### Time to train!
 Having done all that, I was ready to start training some models. My X matrix contained things like location, review information, and the 100 columns that reflected the name column. And my target, of course, was my price column.
 ## Initial Models
+The biggest mistake I made when looking at the distribution of my target values, was to zoom in on the wrong axis.
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/price_dist.PNG)
+
+I saw all my prices clustered around 0-1000 so I zoomed my x-axis to get a better look.
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/price_initial.png)
+
+Looking in on the zoom I thought there were just a few above $500 but nothing that would throw me off (wrong).
+### Poor Models
+I trained my first couple of models and my R squared scores were horrible. I saw some improvement with the probability columns rather than just binary columns but it was still nothing to reliably predict on. This is where I started to panic a little bit thinking I wouldn’t be able to predict price from the information I had alone.
+## Target Adjustment
+
