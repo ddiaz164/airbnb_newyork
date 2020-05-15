@@ -13,3 +13,6 @@ I found that most of these listings were in the Manhattan and Brooklyn area with
 ## Price Distribution
 To get a better visual of the price ranges in the city, I grouped each borough on average price and was not surprised to find that the more dense boroughs had a higher average price per listing. 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_boroughs.PNG)
+In a similar way, I wanted to look at the average price per neighborhood. 
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_wrong.PNG)
+But because each host entered their neighborhood, the official names of the neighborhoods weren’t always used and therefore I could not connect my geojson file to the neighborhood column.
