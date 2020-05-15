@@ -12,4 +12,4 @@ The first thing I wanted to do was to take a look at how these listings were dis
 I found that most of these listings were in the Manhattan and Brooklyn area with a small number of them being in Bronx and Staten Island, and a moderate amount in Queens.
 ## Price Distribution
 To get a better visual of the price ranges in the city, I grouped each borough on average price and was not surprised to find that the more dense boroughs had a higher average price per listing. 
-![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_boroughs.png)
+![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_boroughs.PNG)
