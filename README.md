@@ -17,4 +17,10 @@ To get a better visual of the price ranges in the city, I grouped each borough o
 In a similar way, I wanted to look at the average price per neighborhood. 
 ![](https://github.com/ddiaz164/airbnb_newyork/blob/master/images/choro_wrong.PNG)
 
-But because each host entered their neighborhood, the official names of the neighborhoods weren’t always used and therefore I could not connect my geojson file to the neighborhood column.
+But because each host entered their neighborhood for the listing, the official names of the neighborhoods weren’t always used and therefore I could not connect my geojson file to the neighborhood column in order to fill in the price for those boundaries.
+
+## Model Data
+When looking at the data, I found there was a lot of information contained in the listing name column but since all the entries were strings I had to transform them into numbers in such a way where it would reflect the information each string contained. To do this I vectorized the name column for a total of about 8000 features, and then used non-negative matrix factorization to find 100 latent topics. I then created 100 new columns (one for each topic), and each column was filled with the probability that the original listing name belonged to that latent topic. So for each listing, the sum of those 100 columns added up to 1.
+### Time to train!
+Having done all that, I was ready to start training some models. My X matrix contained things like location, review information, and the 100 columns that reflected the name column. And my target, of course, was my price column.
+## Initial Models
